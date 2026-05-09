@@ -144,7 +144,7 @@ void updateTrafficState() {
 
 Separating transition logic, timing behavior, and output control makes the firmware significantly more organized and easier to reason about and expand on. 
 
-<!-- states video -->
+![States](https://github.com/teletraanx/teletraanx.github.io/blob/main/assets/thumbs/trafficlight-statemachine/states0.gif?raw=true)
 
 ## Observability and Serial Debugging
 Now, I could add serial observability through UART logging. The controller outputs to the Serial monitor: 
@@ -272,7 +272,7 @@ void requestStateChange(TrafficState newState) {
 }
 ```
 
-<!-- directstatecommands video -->
+![Direct State Commands](https://github.com/teletraanx/teletraanx.github.io/blob/main/assets/thumbs/trafficlight-statemachine/directstatecommands0.gif?raw=true)
 
 ## Structured Firmware Protocol
 I later redesigned the UART interface to use a structured command protocol rather than plain-text commands. 
