@@ -34,7 +34,7 @@ The controller was built with an Arduino Uno R3 and 12 LEDs, representing a 4-wa
 
 I initially developed the system in [Tinkercad](https://www.tinkercad.com/circuits), allowing me to plan wiring layouts, test firmware, and safely debug any issues before moving to physical hardware.
 
-<!-- testcircuit video -->
+![Testing the circuit](https://github.com/teletraanx/teletraanx.github.io/blob/main/assets/thumbs/trafficlight-statemachine/testcircuit0.gif?raw=true)
 
 ## Finite State Machine 
 Instead of procedurally cycling through LEDs inside the main loop, I redesigned the controller as a finite state machine where each traffic phase is represented as a state: 
