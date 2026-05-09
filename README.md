@@ -3,7 +3,7 @@ In this project, I built a firmware-driven 4-way traffic intersection controller
 
 The controller manages North/South and East/West traffic phases, supports both automatic and manual control modes, and exposes a structured UART command interface intended for future Python/Pytest integration testing. 
 
-![Read on my portfolio!](https://teletraanx.github.io/projects/trafficlight-statemachine/)
+[Read on my portfolio!](https://teletraanx.github.io/projects/trafficlight-statemachine/)
 
 ## Key Concepts: 
 - Embedded C++ firmware development
