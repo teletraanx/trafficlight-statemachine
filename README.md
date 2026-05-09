@@ -7,8 +7,8 @@ The controller manages North/South and East/West traffic phases, supports both a
 - Embedded C++ firmware development
 - Finite state machine architecture 
 - Non-blocking timing
-- UART communication and command parsing
-- Structured firmware protocol design
+- UART communication 
+- Structured command protocol
 - Cooperative task scheduling 
 - Firmware observability and debug logging
 - Designing firmware for future automated testing
@@ -150,7 +150,7 @@ Separating transition logic, timing behavior, and output control makes the firmw
 Now, I could add serial observability through UART logging. The controller outputs to the Serial monitor: 
 - active traffic state
 - timing information
-- protocol responses
+- system responses
 - mode changes
 ```
 Serial.print("TIME: ");
@@ -359,4 +359,4 @@ Future tests include:
 - rejecting malformed commands
 This testing will allow the firmware to be validated automatically rather than relying on manual commands. 
 
-<!-- picture of 3D printed traffic light -->
+![3D printed traffic light. Model by kocyunus](https://github.com/teletraanx/teletraanx.github.io/blob/main/assets/thumbs/trafficlight-statemachine/trafficlight.jpg?raw=true)
